@@ -17,7 +17,11 @@ An analysis of 10,000 recent customer sessions revealed distinct patterns betwee
 * **Noise vs. Signal:** Metrics like `day_of_week` and `days_since_last_visit` proved to be entirely random noise. However, **Engagement Intensity** (page views relative to session duration) emerged as the strongest indicator of purchase intent.
 * **The Segment Gap:** We are currently treating all customers the same, but the data shows a massive divide. **VIP Customers** convert naturally at a rate of 62.7%, while our **At-Risk** segment lags severely at 42.0%. 
 
-*(Insert your EDA graph here: Drag and drop your "Purchase Rate by Segment" or "Session Duration" chart image directly into the GitHub editor)*
+
+<img width="966" height="566" alt="CustomerSegment vs PurchaseRate" src="https://github.com/user-attachments/assets/cd850dcb-a41d-482b-9301-02a484f2b59b" />
+
+
+<img width="665" height="365" alt="SessionDurationByMinutues" src="https://github.com/user-attachments/assets/c843aa3d-f5c1-42b2-ac06-0403d37891ab" />
 
 ---
 
@@ -37,7 +41,8 @@ We mathematically adjusted the system's internal trigger to match our risk profi
 * By telling the system to intervene the moment it is just 41% confident, our F1-Score jumped to a mathematical peak of **0.684**. 
 * More importantly, this wider net successfully identifies and captures **90% of all true buyers** on the platform.
 
-*(Insert your Threshold graph here: Drag and drop a screenshot of the probability threshold output or classification report)*
+<img width="708" height="445" alt="Screenshot 2026-03-25 090754" src="https://github.com/user-attachments/assets/14ef9a8b-9bf1-4103-b5f1-2f6363a0a800" />
+
 
 ---
 
